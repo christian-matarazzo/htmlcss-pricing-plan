@@ -6,22 +6,29 @@
 
 
 body {
-font-family: sans-serif;  
+    font-family: sans-serif;
 }
 
 .container {
-    max-width: 900px;
+    min-width: 390px;
+    max-width: 1400px;
     margin: auto;
 }
 
+
+
 .header {
+    display: flex;
+    flex-direction: column;
     position: relative;
+    align-items: center;
     margin: 70px 55px;
 }
 
 .header>h1 {
     font-size: 74px;
 }
+
 
 h2 {
 
@@ -36,20 +43,17 @@ h2 {
     align-items: center;
     gap: 10px;
     margin-top: 45px;
-    margin-right: 60px;  
+    margin-right: 60px;
 
-    
+
     button {
-    appearance: none;
-    -webkit-appearance: none;
-    background: transparent;
-    border: none;
-    font-size: 16px;
-    color: rgb(129, 133, 143);
-    padding: 8px 12px;
-    transition: all 0.2s ease;
-    font-size: 25px;
-}
+        background: transparent;
+        border: none;
+        font-size: 16px;
+        color: rgb(129, 133, 143);
+        padding: 8px 12px;
+        font-size: 25px;
+    }
 
 
 
@@ -57,18 +61,18 @@ h2 {
 
 
 .cards {
-    display: flex;           
-    flex-direction: row;      
-    justify-content: center;  
-    align-items: stretch;     
-    gap: 65px;                
-    flex-wrap: wrap;          
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 65px;
+    flex-wrap: wrap;
 }
 
 
 .title {
     align-self: flex-start;
-    font-size: 26px;   
+    font-size: 26px;
 
 }
 
@@ -81,15 +85,15 @@ h2 {
 .card-price {
     display: flex;
     align-items: baseline;
-    justify-content: center; 
-    align-self: center;      
+    justify-content: center;
+    align-self: center;
 }
 
 
 .price {
 
     font-size: 65px;
-    
+
 }
 
 
@@ -97,13 +101,13 @@ h2 {
 .discount {
     display: flex;
     align-items: baseline;
-    justify-content: center; 
+    justify-content: center;
     align-self: center;
     margin: 35px;
-    
+
     span {
 
-       border: 2px solid rgb(227, 227, 227);
+        border: 2px solid rgb(227, 227, 227);
         background-color: rgb(227, 227, 227);
         border-radius: 15%;
         padding: 6px;
@@ -115,18 +119,18 @@ h2 {
 
 
 
-.CTA{
+.CTA {
     display: flex;
-    justify-content: center; 
-    background-color: #6200ff; 
-    color: #ffffff;            
-    border: none;             
-    width: 100%;               
-    padding: 18px 0;           
-    margin: 30px 0;            
-    border-radius: 16px;       
-    font-size: 18px;           
-    font-weight: 700;            
+    justify-content: center;
+    background-color: #6200ff;
+    color: #ffffff;
+    border: none;
+    width: 100%;
+    padding: 18px 0;
+    margin: 30px 0;
+    border-radius: 16px;
+    font-size: 18px;
+    font-weight: 700;
 }
 
 
@@ -142,13 +146,14 @@ h2 {
 
 /* cards css */
 
-.basic-card {
+.basic-card,
+.ultimate-card {
     background-color: #fff;
     border: 1px solid #e5e7eb;
-    border-radius: 24px;      
+    border-radius: 24px;
     padding: 50px;
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
@@ -156,35 +161,40 @@ h2 {
     color: white;
     background-color: rgb(101, 0, 255);
     border: 1px solid #e5e7eb;
-    border-radius: 24px;      
+    border-radius: 24px;
     padding: 50px;
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 
     .subtitle {
 
         color: white;
     }
-        .CTA-professional{
-            display: flex;
-            justify-content: center; 
-            background-color: #ffffff; 
-            color:rgb(98, 0, 255);          
-            border: none;             
-            width: 100%;               
-            padding: 18px 0;           
-            margin: 30px 0;            
-            border-radius: 16px;       
-            font-size: 18px;           
-            font-weight: 700;            
-        }
+
+    .CTA-professional {
+        display: flex;
+        justify-content: center;
+        background-color: #ffffff;
+        color: rgb(98, 0, 255);
+        border: none;
+        width: 100%;
+        padding: 18px 0;
+        margin: 30px 0;
+        border-radius: 16px;
+        font-size: 18px;
+        font-weight: 700;
+    }
 }
 
 
+.ultimate-card {
+    display: flex;
+    flex-grow: 1;
 
+    .plan-list {
+        display: flex;
+        align-items: center;
+    }
 
-
-
-
-
+}
